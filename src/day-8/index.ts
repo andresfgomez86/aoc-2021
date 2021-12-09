@@ -31,7 +31,7 @@ const partTwo = (input: string[]) => {
     numbers[0] = patternList.find(pattern => pattern.length === 6 && pattern !== numbers[9] && getCoincidences(pattern, numbers[7]) === 3)!;
     numbers[6] = patternList.find(pattern => pattern.length === 6 && pattern !== numbers[9] && pattern !== numbers[0])!;
     numbers[5] = patternList.find(pattern => pattern.length === 5 && getCoincidences(pattern, numbers[6]) === 5)!;
-    numbers[3] = patternList.find(pattern => pattern.length === 5 && pattern !== numbers[5] && getCoincidences(pattern, numbers[4]) === 3)!;
+    numbers[3] = patternList.find(pattern => pattern.length === 5 && pattern !== numbers[5] && getCoincidences(pattern, numbers[7]) === 3)!;
     numbers[2] = patternList.find(pattern => pattern.length === 5 && pattern !== numbers[3] && pattern !== numbers[5])!;
     
     const digits = entry.split(" | ")[1].trim().split(" ");
